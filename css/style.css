@@ -124,6 +124,20 @@ body {
     background: rgba(255, 255, 255, 0.2);
 }
 
+.trepav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s ease;
+}
+
+.trepav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
 /* Main Layout */
 .container {
     max-width: 1400px;
@@ -195,6 +209,10 @@ body {
     gap: 2rem;
     align-items: center;
     background: linear-gradient(135deg, rgba(0, 102, 204, 0.1) 0%, rgba(0, 212, 255, 0.1) 100%);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 3rem;
 }
 
 .hero-text h1 {
@@ -207,6 +225,42 @@ body {
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 8px 32px rgba(0, 212, 255, 0.2);
+}
+
+/* Maharaja Section */
+.maharaja-section {
+    position: relative;
+    margin-bottom: 3rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 212, 255, 0.2);
+}
+
+.maharaja-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.maharaja-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    padding: 3rem 2rem 2rem;
+    color: white;
+}
+
+.maharaja-overlay h2 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.maharaja-overlay p {
+    color: var(--text-light);
+    margin: 0;
 }
 
 /* Quick Navigation */
@@ -361,6 +415,134 @@ body {
     font-size: 0.95rem;
 }
 
+/* FAQ Items */
+.faq-item {
+    background: rgba(0, 102, 204, 0.08);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.faq-item h3 {
+    margin-top: 0;
+    color: var(--secondary-color);
+    margin-bottom: 0.75rem;
+}
+
+.faq-item p {
+    margin: 0;
+    line-height: 1.8;
+}
+
+/* Features List */
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.feature-item {
+    background: rgba(0, 102, 204, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 212, 255, 0.15);
+}
+
+.feature-item h3 {
+    margin-top: 0;
+    color: var(--secondary-color);
+}
+
+/* Problem Solution */
+.problem-solution {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.problem, .solution {
+    background: rgba(0, 102, 204, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.problem h3 {
+    color: var(--warning-color);
+}
+
+.solution h3 {
+    color: var(--accent-color);
+}
+
+/* Rewards Table */
+.rewards-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.rewards-table thead {
+    background: rgba(0, 102, 204, 0.2);
+}
+
+.rewards-table th {
+    padding: 1rem;
+    text-align: left;
+    color: var(--secondary-color);
+    font-weight: 600;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.rewards-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.rewards-table tbody tr:hover {
+    background: rgba(0, 212, 255, 0.05);
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.15) 0%, rgba(0, 212, 255, 0.15) 100%);
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 3rem;
+}
+
+.cta-section h2 {
+    margin-top: 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #0066cc 0%, #00d4ff 100%);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 212, 255, 0.3);
+}
+
 /* Footer */
 .footer {
     text-align: center;
@@ -372,6 +554,43 @@ body {
 
 .footer p {
     margin: 0.5rem 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer-section li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--accent-color);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+    text-align: center;
 }
 
 /* Responsive */
@@ -401,6 +620,10 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .problem-solution {
+        grid-template-columns: 1fr;
+    }
+
     .content section {
         padding: 1.5rem;
     }
@@ -410,6 +633,22 @@ body {
     }
 
     .nav-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .maharaja-overlay {
+        padding: 2rem 1rem 1rem;
+    }
+
+    .maharaja-overlay h2 {
+        font-size: 1.5rem;
+    }
+
+    .features-list {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
         grid-template-columns: 1fr;
     }
 }
